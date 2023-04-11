@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+    {{!-- <title></title> --}}
+</head>
+
+<body>
+    {{!-- {{>navbar}} --}}
+    <div style="height: 100vh;"
+        class="register container d-flex align-items-center justify-content-center">
+        <div class="container-fluid">
+            <div class="row m-1 d-flex align-items-center justify-content-center">
+                <div class="col-8 m-1" style="background-color: rgba(85, 85, 85, 0.64); border-radius: 10px;">
+                    <h2 class="text-center">Student Registration Form</h2>
+                    <form action="/register" method="post">
+                        <div class="row my-4">
+                            <div class="col-6 form-group">
+                                <label for="exampleInputEmail1">First Name</label>
+                                <input type="text" class="form-control" id="first_name" aria-describedby="firstnameHelp"
+                                    placeholder="First Name" name="firstname">
+                            </div>
+                            <div class="col-6 form-group w-25">
+                                <label for="exampleInputEmail1">Last Name</label>
+                                <input type="text" class="form-control" id="last_name" aria-describedby="lastnameHelp"
+                                    placeholder="Last Name" name="lastname">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6 form-group w-25">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                    placeholder="Enter you email" name="email">
+                            </div>
+                            <div class="col-6 form-group w-25">
+                                <label for="userphone">Phone</label>
+                                <input type="phone" class="form-control" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 form-group w-25">
+                                <label for="exampleInputEmail1">Age</label>
+                                <input type="text" class="form-control" id="first_name" aria-describedby="firstnameHelp"
+                                    placeholder="Enter you age" name="age">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6 form-group">
+                                <label for="exampleInputsetPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Password" name="password">
+                            </div>
+                            <div class="col-6 form-group">
+                                <label for="exampleInputconfirmedPassword1">Confirm Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1"
+                                    placeholder="Confirm Password" name="confirmpassword">
+                            </div>
+                        </div>
+
+                        <div class="row p-0 py-1 mt-2">
+                            <div class="col-6 form-group w-25">
+                                <div class="maxl">
+                                    <label for="" class="radio-inline">
+                                        <input type="radio" name="gender" value="male" checked>
+                                        <span>Male</span>
+                                    </label>
+                                    <label for="" class="radio-inline">
+                                        <input class="mx-2" type="radio" name="gender" value="female" checked>
+                                        <span>Female</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="container-fluid w-100 d-flex justify-content-end flex-end mb-2">
+                                <button type="submit" class="w-50 btn bg-primary btnRegister"
+                                    value="Register" style="color: whitesmoke; font-size: 1.2rem;">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    {{>scriptlinks}}
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  {{>headerlinks}}
+  {{!-- <title></title> --}}
+</head>
+
+<body>
+  {{>navbar}}
+
+  <div style="height: 100vh" ; class="container-fluid border border-primary">
+    <div class="row h-75 my-5 d-flex align-items-center justify-content-center">
+      <div class="col-sm-6 col-md-4 mx-auto border" style="height: 65vh; background-color: rgba(18, 18, 18, 0.15); border-radius: 8px;">
+        <h1 class="text-center login-title my-5">Student Login Form</h1>
+        <div class="accountWall">
+          <img src="" alt="">
+          <form action="/login" method="post" name="loginform">
+            <input type="text" class="form-control my-4" placeholder="Email" name="email" required>
+            <input type="password" class="form-control my-4" name="password" id="" placeholder="Password" required>
+            <button class="btn btn-lg btn-dark btn-block" type="submit">Sign In</button>
+            <label class="checkbox pull-left mt-3" for="">
+              <input type="checkbox" value="remember-me"><span class="mx-2">Remember me</span>
+            </label>
+            <a href="#" class="text-center">Need help?</a>
+          </form>
+        </div>
+
+        <a style="text-decoration: none;" href="/register" class="text-center new-account d-block text-center my-3">Create new account</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  {{>scriptlinks}}
+</body>
+
+</html>
